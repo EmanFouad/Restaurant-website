@@ -1,0 +1,225 @@
+.meal-details{
+    background-image: url("./../../images/meal-bg.jpg");
+    background-repeat: no-repeat;
+    background-position:right 530px top 220px;
+    background-size: 80%;
+    padding-top: 3rem;
+
+    h4{
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $primary-color;
+        padding-right: 0.6rem;
+        position: relative;
+        &::before{
+            content: "";
+            width: 3px;
+            height: 1.5rem;
+            background-color: $secondary-color;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    .card{
+        border: none;
+        margin-bottom: 2rem;
+        background-color: transparent;
+        img{
+            border-radius: 1.2rem;
+        }
+        .card-title{
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $secondary-color;
+        }
+        .card-text{
+            color: $secondary-color;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .card-details{
+            color: $secondary-color;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #888;
+            padding-bottom: 1.5rem;
+            padding-right: 1rem;
+            i{
+                padding-left: 0.5rem;
+            }
+        
+        }
+        .btn-order{
+            background-image: url("./../../images/Group\ 1039.png");
+            background-repeat: no-repeat;
+            background-position: left -86px top -110px;
+            padding: 0.8rem 4rem;
+            font-size: 1.2rem;
+            color: #fff;
+            border-radius: 1rem;
+            margin: 0 auto;
+            margin-top: 2rem;
+            display: block;
+            width: 55%;
+            @media (max-width: 575.98px) { 
+                width: 85%;
+            }
+        }
+    }
+    .about{
+        margin-bottom: 3rem;
+        display: flex;
+        align-items: center;
+        i{
+            color: $secondary-color;
+            font-size: 1.5rem;
+            padding-left: 0.3rem;
+        }
+        span{
+            color: $primary-color;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+    }
+    .reviews{
+        .review-card{
+            background-color: #e5e5e5;
+            border-radius: 1rem;
+            padding: 0.8rem 0.5rem;
+            margin-bottom: 2rem;
+            p{
+                color: $primary-color;
+                font-size: 1.2rem;
+            }
+            .stars{
+                @extend %stars;
+                background-color: #fff;
+                padding: 0.5rem 2rem;
+                display: inline-flex;
+                border-radius: 1rem;
+            }
+        }
+    }
+    .add-review{
+        margin-bottom: 2rem;
+        form{
+            textarea{
+                background-color: #f9f9f9;
+                box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.2);
+                border-radius: 0.5rem;
+                margin: 1.5rem 0;
+                padding: 1rem;
+            }
+            .btn-submit{
+                background-image: linear-gradient(#e12e52 ,#b0124c);
+                color: #fff;
+                padding: 0.5rem 4rem;
+                border: none;
+                border-radius: 2rem;
+            }
+        }
+    }
+    .more{
+        
+        h4{
+            margin-bottom: 1rem;
+        }
+        .more-cards{
+            background-image: url("./../../images/rest-bg.jpg");
+            background-repeat: no-repeat;
+            padding: 4rem 2rem;
+
+            .img-wrapper{
+                position: relative;
+                width: 340px;
+                height: 380px;
+                &:hover{
+                    .overlay{
+                        opacity: 1;
+                    }
+                }
+                a{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    cursor: pointer;
+                    z-index: 999;
+                }
+                img{
+                    width: 340px;
+                    height: 380px;
+                    border-radius: 1rem;
+                    margin: 0 auto;
+                    box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.4);
+                    object-fit: cover;
+                 
+                    @media (min-width: 992px) and (max-width: 1199.98px) { 
+                        width: 300px;
+                        height: 350px;
+                     }
+                     @media (max-width: 575.98px) {
+                        width: 250px;
+                        height: 280px;
+                     }
+                }
+                .overlay{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 1;
+                    background-color: rgba($color: #000000, $alpha: 0.5);
+                    border-radius: 1rem;
+                    opacity: 0;
+                    h5,p{
+                        color: #fff;               
+                    }
+                }
+                @media (min-width: 992px) and (max-width: 1199.98px) { 
+                    width: 300px;
+                    height: 350px;
+                 }
+                 @media (max-width: 575.98px) {
+                    width: 250px;
+                    height: 280px;
+                 }
+            }
+           
+            .owl-carousel {
+                .owl-dots{
+                    text-align: center;
+                    margin-top: 2rem;
+                    button{
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 10px;
+                        background-color: $secondary-color;
+                        margin-left: 0.5rem;
+                        box-shadow: 0 0 3px rgba($color: #000000, $alpha: 0.5);
+                        &.active{
+                            background-color: $primary-color;
+                        }
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                }
+                .owl-item{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+        
+    }
+}

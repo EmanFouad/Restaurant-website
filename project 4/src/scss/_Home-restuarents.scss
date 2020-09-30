@@ -1,0 +1,140 @@
+.restaurent-search{
+    background-image: url("./../../images/favor-bg.png");
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    h2{
+        color: $secondary-color;
+        margin-bottom: 2rem;
+        font-weight: 700;
+    }
+    .choose-box{
+        margin-bottom: 3rem;
+
+        .custom-select{
+            width: 80%;
+            height: 4rem;
+            border-radius: 1rem;
+            box-shadow: 0 0 4px rgba($color: #000000, $alpha: 0.3);
+            margin: 0 auto;
+            background: url("./../../images/down-arrow1.svg") no-repeat left .75rem center/14px 16px;
+            background-color: #f6f6f6;
+            margin-bottom: 1rem;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .form-search{
+            position: relative;
+            width: 80%;
+            padding: 0.8rem 0.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 0 4px rgba($color: #000000, $alpha: 0.3);
+            background-color: #f6f6f6;
+            margin: 0 auto;
+    
+            .form-control{
+                background-color: #f6f6f6;
+                border: none;
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+            .search-btn{
+                position: absolute;
+                top: 12px;
+                left: 0;
+    
+                i{
+                    color: $primary-color;
+                }
+                &:focus{
+                    box-shadow: none;
+                }
+                @media (max-width: 575.98px) {
+                    top: 10px;
+                 }
+            }
+        }
+    }
+
+}
+.cards{
+    .card-item{
+        background-color: #fff;
+        display: flex;
+        padding: 1.5rem 0.5rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.3);
+        margin-bottom: 2rem;
+        position: relative;
+
+        a{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+        }
+        .card-img{
+            width: 30%;
+            margin-left: 1rem;
+            img{
+                width: 100%;
+            }
+            @media (max-width: 991.98px) { 
+                margin-left: 0.3rem;
+             }
+        }
+        .card-content{
+            width: 50%;
+            h4{
+                font-weight: 700;
+                color: $primary-color;
+                margin-bottom: 0.5rem;
+            }
+            .stars{
+                @extend %stars;
+            }
+            p{
+                color: $secondary-color;
+                margin-bottom: 0.3rem;
+                @media (max-width: 991.98px) { 
+                    font-size: 0.8rem;
+                 }
+            }
+        }
+        .card-info{
+            width: 20%;
+            display: flex;
+            align-items: center;
+            
+            p{
+                position: relative;
+                color: $secondary-color;
+                font-weight: 700;
+                padding-right: 1.6rem ;
+                &::before{
+                    content: "";
+                    background-color: #16bf4e;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 20px;
+                    position: absolute;
+                    top: 5px;
+                    right: 0; 
+                }
+                @media (max-width: 991.98px) { 
+                    &::before{
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 10px;
+                    }
+                    padding-right: 0.8rem ;
+                    font-size: 0.8rem;
+                 }
+            }
+        }
+    }
+   
+}

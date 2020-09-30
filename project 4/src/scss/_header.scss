@@ -1,0 +1,104 @@
+header{
+    background-color: #ececec;
+    .nav{
+        padding: 0.5rem 0;
+        display: flex;
+        align-items: center;
+        
+    }
+    .nav-right{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav-cart a {
+            color: $primary-color;
+            font-size: 1.5rem;
+            @media (max-width: 575.98px) { 
+                font-size: 1.2rem;
+                padding-left: 0.3rem;
+            }
+        }
+        .nav-profile{
+            i{
+                color: $primary-color;
+                font-size: 2rem;
+                cursor: pointer;
+                @media (max-width: 575.98px) { 
+                    font-size: 1.5rem;
+                }
+            }
+            .dropdown-menu{
+                .dropdown-item{
+                    a{
+                        color: $secondary-color;
+                    }
+                    i{
+                        color: $secondary-color;
+                        font-size: 1rem;
+                        padding-left: 0.5rem;
+                    }
+                }
+                
+            }
+        }
+        form{
+            .form-control{
+                background-color: #f3f3f3;
+                border: none;
+                @media (max-width: 768px) { 
+                    display: none;
+                }
+            }
+            .search-btn{
+                position: absolute;
+                top: 0;
+                left: 0;
+    
+                i{
+                    color: $primary-color;
+                    font-size: 1rem;
+                    @media (max-width: 768px) { 
+                        font-size: 1.5rem;
+                    }
+                    @media (max-width: 575.98px) { 
+                        font-size: 1.2rem;
+                    }
+                }
+                @media (max-width: 768px) { 
+                    position: initial;
+                }
+            }
+        }
+    }
+    .navbar-brand{
+        display: flex;
+        justify-content: center;
+        img{
+            height: 5.3rem;
+            @media (max-width: 768px) { 
+                height: 4.3rem;
+            }
+            @media (max-width: 575.98px) { 
+                height: 3.3rem;
+            }
+        }
+    }
+    .nav-left{
+        display: flex;
+        justify-content: flex-end;
+        button:focus{
+            outline: none;
+        }
+        .navbar-toggler{
+            border: none;
+            i{
+                color: $primary-color;
+                font-size: 1.8rem;
+                @media (max-width: 575.98px) { 
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}

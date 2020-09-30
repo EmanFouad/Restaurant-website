@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css"
+        integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
+    <link rel="stylesheet" href="./dist/css/main.css">
+    <title>طلباتى</title>
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header>
+        <nav class="navbar-collapse-lg navbar-light">
+            <div class="container">
+                <div class="row nav">
+                    <div class="col-lg-4 col-md-5 col-4">
+                        <div class="nav-right">
+                            <div class="nav-cart d-inline-block">
+                                <a href="./full-cart.html"><i class="fas fa-shopping-cart"></i></a>
+                            </div>
+                            <div class="nav-profile d-inline-block">
+                                <div class="dropdown">
+                                    <a id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fas fa-user-circle"></i>
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                      <a class="dropdown-item" href="./seller-products.html"><i class="fas fa-clipboard-list"></i> منتجاتى</a>
+                                      <a class="dropdown-item" href="./offers.html"><i class="fas fa-gift"></i> العروض</a>
+                                      <a class="dropdown-item" href="./contact.html"><i class="fas fa-envelope"></i> تواصل معنا</a>
+                                      <a class="dropdown-item" href="./account.html"><i class="fas fa-user"></i> حسابى</a>
+                                      <a class="dropdown-item" href="#"><i class="fas fa-calculator"></i> العمولة</a>
+                                      <a class="dropdown-item" href="./orders.html"> <i class="fas fa-th-list"></i> الطلبات المقدمة</a>
+                                      <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> تسجيل الخروج</a>
+                                    </div>
+                                  </div>
+                            </div>
+                            <form class="position-relative d-inline-block my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" aria-label="Search">
+                                <button class="btn search-btn my-2 my-sm-0" type="submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 col-6">
+                        <a class="navbar-brand text-center" href="./index.html"><img src="./images/sofra logo.png"
+                                alt="logo"></a>
+                    </div>
+                    <div class="col-lg-4 col-md-2 col-2">
+                        <div class="nav-left">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-hamburger"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto pl-2">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="./index.html">الرئيسية <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./offers.html">العروض</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./restuarent.html">المطاعم</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start My Orders -->
+    <div class="my-orders">
+        <div class="orders-nav">
+            <nav class="container">
+                <div class="nav nav-tabs row" id="nav-tab" role="tablist">
+                    <a class="nav-item nav-link active col-4" id="nav-new-tab" data-toggle="tab" href="#nav-new"
+                        role="tab" aria-controls="nav-new" aria-selected="true">طلبات جديدة</a>
+    
+                    <a class="nav-item nav-link col-4" id="nav-current-tab" data-toggle="tab" href="#nav-current"
+                        role="tab" aria-controls="nav-current" aria-selected="false">طلبات حالية</a>
+    
+                    <a class="nav-item nav-link col-4" id="nav-previous-tab" data-toggle="tab" href="#nav-previous"
+                        role="tab" aria-controls="nav-previous" aria-selected="false">طلبات سابقة</a>
+                </div>
+            </nav>
+        </div>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-new" role="tabpanel" aria-labelledby="nav-new-tab">
+                <div class="container">
+                    <div class="order-card">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card-img">
+                                    <img src="./images/user-photo.png" alt="user">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-content">
+                                    <h4>العميل : أحمد محمد</h4>
+                                    <p>رقم الطلب : 5147</p>
+                                    <p>المجموع : 75 ريال</p>
+                                    <p>العنوان : 124 شارع المعزبن على - الرياض</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card-btns col-md-12">
+                                <div class="btns">
+                                    <a href="#" class="btn btn-contact">اتصال</a>
+                                    <a href="#" class="btn btn-confirm">استلام</a>
+                                    <a href="#" class="btn btn-cancel">رفض</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-card">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card-img">
+                                    <img src="./images/user-photo.png" alt="user">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-content">
+                                    <h4>العميل : أحمد محمد</h4>
+                                    <p>رقم الطلب : 5147</p>
+                                    <p>المجموع : 75 ريال</p>
+                                    <p>العنوان : 124 شارع المعزبن على - الرياض</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card-btns col-md-12">
+                                <div class="btns">
+                                    <a href="#" class="btn btn-contact">اتصال</a>
+                                    <a href="#" class="btn btn-confirm">استلام</a>
+                                    <a href="#" class="btn btn-cancel">رفض</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-current" role="tabpanel" aria-labelledby="nav-current-tab">
+                <div class="container">
+                    <div class="order-card">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card-img">
+                                    <img src="./images/user-photo.png" alt="user">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-content">
+                                    <h4>العميل : أحمد محمد</h4>
+                                    <p>رقم الطلب : 5147</p>
+                                    <p>المجموع : 75 ريال</p>
+                                    <p>العنوان : 124 شارع المعزبن على - الرياض</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card-btns col-md-12">
+                                <div class="btns">
+                                    <a href="#" class="btn btn-contact">0123456789</a>
+                                    <a href="#" class="btn btn-confirm">تأكيد التسليم</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-card">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card-img">
+                                    <img src="./images/user-photo.png" alt="user">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-content">
+                                    <h4>العميل : أحمد محمد</h4>
+                                    <p>رقم الطلب : 5147</p>
+                                    <p>المجموع : 75 ريال</p>
+                                    <p>العنوان : 124 شارع المعزبن على - الرياض</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card-btns col-md-12">
+                                <div class="btns">
+                                    <a href="#" class="btn btn-contact">0123456789</a>
+                                    <a href="#" class="btn btn-confirm">تأكيد التسليم</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-previous" role="tabpanel" aria-labelledby="nav-previous-tab">
+                <div class="container">
+                    <div class="order-card">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card-img">
+                                    <img src="./images/user-photo.png" alt="user">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-content">
+                                    <h4>العميل : أحمد محمد</h4>
+                                    <p>رقم الطلب : 5147</p>
+                                    <p>المجموع : 75 ريال</p>
+                                    <p>العنوان : 124 شارع المعزبن على - الرياض</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card-btns col-md-12">
+                                <div class="btns">
+                                    <a href="#" class="btn btn-confirm">الطلب مكتمل</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-card">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card-img">
+                                    <img src="./images/user-photo.png" alt="user">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-content">
+                                    <h4>العميل : أحمد محمد</h4>
+                                    <p>رقم الطلب : 5147</p>
+                                    <p>المجموع : 75 ريال</p>
+                                    <p>العنوان : 124 شارع المعزبن على - الرياض</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="card-btns col-md-12">
+                                <div class="btns">
+                                    <a href="#" class="btn btn-confirm">الطلب مكتمل</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End My Orders -->
+
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="about">
+                        <h4>
+                            <i class="far fa-edit"></i>
+                            من نحن
+                        </h4>
+                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                            العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف
+                            التى يولدها التطبيق.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./images/sofra logo.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js"
+        integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e9c094e37f.js" crossorigin="anonymous"></script>
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>

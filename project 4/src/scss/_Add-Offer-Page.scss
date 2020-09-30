@@ -1,0 +1,31 @@
+.add-offer{
+    form{
+        background-color: #ececec;
+
+        .custom-file{
+            .custom-file-label{
+                border-radius: 0;
+                box-shadow: 0 0 3px rgba($color: #000000, $alpha: 0.3);
+            }
+        }
+        .form-group{
+            &:last-of-type{
+                display: flex;
+                justify-content: space-around;
+
+                .input-group{
+                    width: 40%;
+                    @media (max-width: 575.98px) { 
+                        width: 100%;
+                     }
+                }
+
+                @media (max-width: 575.98px) { 
+                    display: block;
+                 }
+            }
+            
+           
+        }
+    }
+}

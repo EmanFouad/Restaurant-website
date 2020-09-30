@@ -1,0 +1,77 @@
+.restuarent{
+    background-image: url("./../../images/rest-bg.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            width: 80%;
+            margin-bottom: 1rem;
+        }
+        h3{
+            color: #fff;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .stars{
+            background-color: #fff;
+            padding: 0.5rem 1.5rem;
+            border-radius: 2rem;
+            @extend %stars;
+        }
+    } 
+}
+.orders{
+    background-image: url("./../../images/favor-bg.png");
+    padding: 2rem 0;
+    .card{
+        position: relative;
+        border-radius: 1.4rem;
+        margin-bottom: 2rem;
+        a{
+            &:first-child{
+                text-decoration: none;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+        }
+        img{
+            max-width: 100%;
+        }
+        .card-body{
+            h5{
+                font-weight: 700;
+                color: $primary-color;
+                margin-bottom: 0.5rem;
+            }
+            .card-details{
+                margin-bottom: 1.2rem;
+                i{
+                    color: $secondary-color;
+                }
+                span{
+                    color: $primary-color;
+                }
+            }
+            .btn-details{
+                background-image: url("./../../images/btn-card.png");
+                background-position: center;
+                color: #fff;
+                padding: 0.5rem 3rem;
+                border: none;
+                border-radius: 0.6rem;
+                display: block;
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    }
+}

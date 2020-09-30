@@ -1,0 +1,84 @@
+.my-orders{
+    padding-bottom: 3rem;
+    .orders-nav{
+        background-color: #ec3454;
+        margin-bottom: 2rem;
+        
+
+        .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+            border-color: transparent;
+            border-bottom: 3px solid $secondary-color;
+           
+        }
+        .nav-link{
+            background-color: transparent !important;
+            color: #fff !important;
+            text-align: center;
+            padding: 1.5rem 0;
+            font-size: 1.2rem;
+            &:hover{
+                border-color: transparent;
+            }
+        }
+    }
+    .order-card{
+        background-color: #ececec;
+        border-radius: 2rem;
+        padding: 2rem 2rem 0 2rem;
+        margin-bottom: 2rem;
+        .card-img{
+            img{
+                width: 80%;
+            } 
+        }
+        .card-content{
+            h4{
+                color: $secondary-color;
+                font-size: 1.6rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                @media (max-width: 575.98px) { 
+                    font-size: 1rem;
+                    margin-top: 1rem;
+                }
+            }
+            p{
+                color: $primary-color;
+                margin-bottom: 0.5rem;
+                font-size: 1.2rem;
+                @media (max-width: 575.98px) { 
+                    font-size: 1rem;
+                }
+            }
+        }
+        .card-btns{
+            text-align: center;
+            a{
+                text-decoration: none;
+                color: #fff;
+                padding: 0.8rem 5rem;
+                border-radius: 2rem;
+                box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.4);
+                margin-bottom: 1.5rem;
+                border: none;
+                margin-left: 2rem;
+                @media (max-width: 575.98px) { 
+                    font-size: 1rem;
+                    padding: 0.8rem 3rem;
+                }
+            }
+            .btn-contact{
+                background-color:  #ff4057;
+            }
+            .btn-confirm{
+                background-color: #008d3d;
+            }
+            .btn-cancel{
+                background-color: #240041;
+            }
+            @media (max-width: 575.98px) { 
+                margin-top: 1rem;
+             }
+        }
+    }
+}

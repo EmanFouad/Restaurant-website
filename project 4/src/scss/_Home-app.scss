@@ -1,0 +1,65 @@
+.app-download{
+    background-image: url("./../../images/app-bg.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat; 
+    position: relative;
+    p{
+        color: #fff;
+        font-size: 2.4rem;
+        margin-bottom: 12rem;
+        text-align: right;
+        padding-top: 6rem;
+        @media (min-width: 992px) and (max-width: 1199.98px) { 
+            margin-bottom: 10rem;
+         }
+         @media (min-width: 768px) and (max-width: 991.98px) { 
+            font-size: 2rem;
+            margin-bottom: 1rem;
+          }
+          @media (min-width: 576px) and (max-width: 767.98px) { 
+            font-size: 2rem;
+            margin-bottom: 2rem;
+          }
+          @media (max-width: 576.98px) { 
+            padding-top: 2rem;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            text-align: center;
+           }
+    }
+    .download-btn{
+        text-decoration: none;
+        background-image: url("./../../images/btn-card.png");
+        background-position: center;
+        padding: 0.5rem 2.5rem;
+        border: none;
+        border-radius: 0.8rem;
+        color: #fff;
+        font-size: 1.8rem;
+        margin-bottom: 5rem;
+        i{
+            color: #fff;
+        }
+        @media (min-width: 767.98px) and (max-width: 1199.98px) { 
+            margin-bottom: 2rem;
+         }
+        @media (max-width: 767px) { 
+            font-size: 1rem;
+            margin-bottom: 1rem;
+           }
+    }
+
+    .app-download-img{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        img{
+            width: 100%;
+            @media (max-width: 767.98px) { 
+                display: none;
+             }
+        }
+    }
+}

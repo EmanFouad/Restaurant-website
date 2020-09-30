@@ -1,0 +1,45 @@
+.offers{
+    .offers-head{
+        margin-bottom: 3rem;
+        h3{
+            color: $primary-color;
+            position: relative;
+            margin-bottom: 2rem;
+            padding-right: 0.5rem;
+            text-align: right;
+            font-weight: 600;
+            &::before{
+                content: "";
+                width: 3px;
+                height: 30px;
+                background-color: $secondary-color;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+        .btn-add{
+            background-image: linear-gradient(#e12e52 ,#b0124c);
+            padding: 0.5rem 4rem;
+            border-radius: 2rem;
+            color: #fff;
+            border: none;
+            margin: 0 auto;
+        }
+    }
+    .offers-content{
+        position: relative;
+        a{
+            text-decoration: none;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+        img{
+            width: 100%;
+            border-radius: 1rem;
+        }
+    }
+}

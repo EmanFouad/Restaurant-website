@@ -1,0 +1,41 @@
+footer{
+    background-image: url("./../../images/footerbg.png");
+    background-size: 100%;
+    padding: 2.5rem 0;
+
+    .about{
+        h4{
+            color: #fff;
+            margin-bottom: 1rem;
+            i{
+                color: #16295b;
+            }
+        }
+        p{
+            width: 60%;
+            color: #fff;
+            line-height: 2;
+            @media (max-width: 767.98px) { 
+                width: 100%;
+               }
+        }
+        .social-icons{
+            a{
+                color: #fff;
+            }
+            i{
+                font-size: 1.5rem;
+                padding-left: 0.8rem;
+            }
+        }
+    }
+    .logo{
+        img{
+            width: 100%;
+            @media (max-width: 767.98px) { 
+                margin-top: 1rem;
+                width: 60%;
+               }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.signin-seller{
+
+    form{
+        img{
+            top: calc(-7%);
+            @media (min-width: 768px) and (max-width: 991.98px) { 
+                top: calc(-4%);
+             }
+            @media (max-width: 480.98px) { 
+                top: calc(-3%);
+              }
+        }
+        select{
+            appearance: none;
+            background: url("./../../images/down-arrow1.svg") no-repeat left .75rem center/14px 16px;
+            background-color: #f3f3f3;
+            border-radius: 0.5rem;
+            height: 2.4rem;
+            padding-right: 0.4rem;
+            border: none;
+            margin-bottom: 1.8rem;
+        }
+        .custom-file{
+            margin-bottom: 1.8rem;
+            label{
+                background-color: #f3f3f3;
+                border-radius: 0.5rem;
+                border: none;
+                text-align: right;
+            }
+        }
+
+    }
+}
